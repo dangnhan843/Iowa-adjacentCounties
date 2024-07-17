@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_APP_ADOT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Iowa County Adjacency Checker" Height="300" Width="450">
+    <Grid>
+        <StackPanel Margin="10">
+            <Grid Margin="0,0,0,10">
+                <ComboBox x:Name="County1ComboBox" SelectionChanged="CountyComboBox_SelectionChanged" Margin="0,0,10,0" Width="200" VerticalAlignment="Center"/>
+                <TextBlock x:Name="County1Placeholder" Text="Select first county name"
+                           Foreground="Gray" IsHitTestVisible="False"
+                           VerticalAlignment="Center" Margin="130,10,5,0" Height="28"/>
+                <TextBlock x:Name="County1NameTextBlock" Margin="10,1,10,0" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Margin="0,0,0,10">
+                <ComboBox x:Name="County2ComboBox" SelectionChanged="CountyComboBox_SelectionChanged" Margin="0,0,10,0" Width="200" VerticalAlignment="Center"/>
+                <TextBlock x:Name="County2Placeholder" Text="Select second county name"
+                           Foreground="Gray" IsHitTestVisible="False"
+                           VerticalAlignment="Center" Margin="130,10,5,0" Height="28"/>
+                <TextBlock x:Name="County2NameTextBlock" Margin="10,0,10,0" VerticalAlignment="Top"/>
+            </Grid>
+            <Button Content="Check Adjacency" Click="CheckAdjacencyButton_Click" Margin="0,10,0,10" Width="120" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="ResultTextBlock" TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

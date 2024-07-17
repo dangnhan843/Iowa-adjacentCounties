@@ -1,0 +1,10 @@
+Explanation
+County Table:
+The county table is populated with IDs and names for counties in Iowa.
+Only the counties required for accurate results concerning Story, Greene, and Tama counties are included.
+
+Adjacent County Table:
+The adjacent_county table is populated with adjacency relationships for the specified counties.
+Each pair (county_id, adjacent_county_id) represents an adjacency relationship.
+
+This SQL script ensures that the database has accurate adjacency data for Story, Greene, and Tama counties, which is essential for the functionality of your WPF .NET application.

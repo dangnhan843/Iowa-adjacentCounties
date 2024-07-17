@@ -1,0 +1,34 @@
+Documentation for Full Implementation
+
+Folder Contents:
+	full_implementation.sql
+	county.csv
+	adjacent_county.csv
+
+Documentation
+	This folder contains the full implementation for setting up the IowaCounties database, including the necessary SQL script and CSV files for bulk import.
+
+Contents:
+
+	full_implementation.sql: This SQL script creates the IowaCounties database, sets up the county and adjacent_county tables, and includes commands for bulk importing data from the provided CSV files.
+
+	county.csv: A CSV file containing data for the county table, including columns for id, county_name, fips_number, and map_number.
+
+	adjacent_county.csv: A CSV file containing data for the adjacent_county table, with columns for county_id and adjacent_county_id.
+
+
+Steps to Use
+
+Ensure SQL Server Installation:
+	Make sure SQL Server 2017 or a more recent version is installed.
+
+Place Files:
+	Place the county.csv and adjacent_county.csv files in a known directory on your system.
+
+Update File Paths:
+	Open full_implementation.sql.
+	Update the file paths in the BULK INSERT commands to point to the location of your CSV files.
+
+Execute SQL Script:
+	Open SQL Server Management Studio (SSMS).
+	Execute the full_implementation.sql script to create the database, tables, and import the data.
